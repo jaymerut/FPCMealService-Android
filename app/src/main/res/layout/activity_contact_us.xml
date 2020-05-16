@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/addressTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Camp Address"
+            android:fontFamily="@font/optima"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp">
+        </TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="933 East Friendly Pines Road\nPrescott, AZ\n86303-8202"
+            android:fontFamily="@font/optima"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginStart="20dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/phoneTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Phone Number"
+            android:fontFamily="@font/optima"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp">
+        </TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="(928) 445-2128"
+            android:fontFamily="@font/optima"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginStart="20dp">
+        </TextView>
+
+        <TextView
+            android:id="@+id/emailTitle"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="Email"
+            android:fontFamily="@font/optima"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginTop="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginBottom="10dp">
+        </TextView>
+        <TextView
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="info@friendlypines.com"
+            android:fontFamily="@font/optima"
+            android:textSize="20sp"
+            android:textColor="@color/colorBlack"
+            android:layout_marginStart="20dp">
+        </TextView>
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorAccent"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_vertical">
+
+        <Space
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <Button
+            android:id="@+id/menu_button"
+            android:onClick="menuClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Menu"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/optima"
+            android:drawableTop="@drawable/menu_icon"
+            android:textAllCaps="false">
+        </Button>
+        <Space
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <Button
+            android:id="@+id/contact_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Contact Us"
+            android:textColor="@color/colorWhite"
+            android:fontFamily="@font/optima"
+            android:drawableTop="@drawable/contact_us_icon"
+            android:drawableTint="@color/colorWhite"
+            android:textAllCaps="false">
+        </Button>
+        <Space
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+        <Button
+            android:id="@+id/pay_button"
+            android:onClick="payClicked"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@null"
+            android:text="Pay Now"
+            android:textColor="@color/colorBlack"
+            android:fontFamily="@font/optima"
+            android:drawableTop="@drawable/pay_now_icon"
+            android:textAllCaps="false">
+        </Button>
+        <Space
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+    </LinearLayout>
+
+</RelativeLayout>
